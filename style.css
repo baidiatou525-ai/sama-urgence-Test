@@ -332,12 +332,20 @@ section {
 }
 
 .service-card {
-    padding: 40px 32px;
+   padding: 40px 32px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
-
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
 .service-icon {
-    width: 60px;
-    height: 60px;
+   width: 70px;
+    height: 70px;
     background: rgba(255, 51, 75, 0.1);
     color: var(--primary);
     border-radius: 12px;
